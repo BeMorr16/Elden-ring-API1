@@ -1,0 +1,96 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0b132b;
+  color: #f8f8f8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 108px;
+}
+
+#title-image {
+  object-fit: cover;
+  object-position: center;
+  image-rendering: optimizeQuality;
+  image-orientation: from-image;
+}
+
+#bosses-search-input {
+  margin-left: 8px;
+  margin-right: 8px;
+  box-sizing: border-box;
+  min-width: 72px;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  line-height: 1.25;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+button#search {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 16px;
+  margin: 10px;
+  height: 440px;
+  max-height: 440px;
+  overflow-y: hidden;
+  width: 316px;
+  border-radius: 10px;
+  background-color: #1c2541;
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  height: auto;
+  width: 160px;
+  align-self: center;
+}
+
+.trunc {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  max-width: 300px;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+}
